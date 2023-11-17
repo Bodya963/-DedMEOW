@@ -1,0 +1,37 @@
+#include <TXlib.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <assert.h>
+
+#include "stacklib.h"
+
+
+
+int main()
+{
+    struct stack stc = {};
+    struct stack * stcP = &stc
+
+    if (( stackCtor( &stc, 10, "MyFirstStack)) == Err)
+    {
+        printf(" Ошибка инцелизации стека\n");
+        exit(1);
+    }
+    stackPrint( stc);
+
+
+    stackPush( stcP, 13);
+    stackPrint( str);
+
+    stackPush( stcP, 12);
+    stackPrint( str);
+
+    stackPush( stcP, 11);
+    stackPrint( str);
+
+    printf("meow stack = %d\n", stackPop( stcP));
+    stackPrint( str);
+
+    stackDtor( strP);
+    return 0;
+}
